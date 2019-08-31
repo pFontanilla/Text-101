@@ -11,7 +11,12 @@ public class NumberWizard : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        StartGame();
+    }
 
+    //
+    void StartGame()
+    {
         Debug.Log("Welcome to number wizard!");
         Debug.Log(string.Format("Pick any number within the following range: {0} - {1}, inclusive.", min, max));
         Debug.Log("I am going to deduce your chosen number with your help.");
@@ -49,6 +54,8 @@ public class NumberWizard : MonoBehaviour
         {
             Debug.Log("Your number is " + guess + " !");
             Debug.Log("We did it!!");
+            Debug.Log("Let's play again.\n\n");
+            StartGame();
         }
     }
 }
