@@ -23,7 +23,7 @@ public class NumberWizard : MonoBehaviour
         Debug.Log("Press the 'Up Arrow' if your number is higher than my guess.");
         Debug.Log("Press the 'Down Arrow' if your number is lower than my guess.");
         Debug.Log("Press the 'Return Key' if my guess is correct!");
-        max = max + 1
+        max += 1;
         guess = (max + min) / 2;
         Debug.Log("My Guess is " + guess);
     }
